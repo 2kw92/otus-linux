@@ -73,7 +73,7 @@ Vagrant.configure("2") do |config|
               cp ~vagrant/.ssh/auth* ~root/.ssh
 	      yum install -y mdadm smartmontools hdparm gdisk
   	  SHELL
-          box.vm.provision "shell", path: "raid.sh"
+          box.vm.provision "shell", path: "https://github.com/2kw92/otus-linux/blob/master/raid.sh"
 
       end
   end
